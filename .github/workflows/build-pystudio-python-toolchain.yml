@@ -176,7 +176,7 @@ jobs:
           cat "SHA256SUMS-$arch.txt"
 
       - name: Upload Python toolchain artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: pystudio-python-toolchain-${{ matrix.target_arch }}-${{ github.run_number }}
           path: |
