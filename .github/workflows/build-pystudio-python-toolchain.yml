@@ -48,7 +48,7 @@ jobs:
       publish_release: ${{ steps.resolve.outputs.publish_release }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Resolve workflow inputs
         id: resolve
@@ -97,7 +97,7 @@ jobs:
       PYSTUDIO_PACKAGES: ${{ needs.resolve-inputs.outputs.packages }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Enable zram
         uses: ./.github/actions/zram
