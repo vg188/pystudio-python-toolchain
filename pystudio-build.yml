@@ -1,0 +1,15 @@
+profile: python
+defaultSource: primary
+availableSources:
+  - primary
+  - secondary
+  - tur
+architectures:
+  - aarch64
+  - arm
+  - i686
+  - x86_64
+releasePrefix: pystudio-python-toolchain
+packages:
+  - python
+  - python-pip
